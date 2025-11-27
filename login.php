@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 
         $hash = password_hash($password, PASSWORD_DEFAULT);
 
-        $stmt = $conn->prepare("INSERT INTO users (email, password_hash) VALUES (?, ?)");
+        $stmt = $conn->prepare("INSERT INTO users (email, password) VALUES (?, ?)");
         $stmt->bind_param("ss", $email, $hash);
         $stmt->execute();
 
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 
     if ($_POST["submit"] === "login") {
 
-        $stmt = $conn->prepare("SELECT id, password_hash, role FROM users WHERE email = ?");
+        $stmt = $conn->prepare("SELECT id, password, role FROM users WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $stmt->store_result();

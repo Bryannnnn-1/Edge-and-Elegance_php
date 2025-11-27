@@ -1,24 +1,14 @@
-
-@font-face {
-  font-family: 'MontserratAlt';
-  src: url('./assets/fonts/MontserratAlternates-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
   --primary-color: #7600df;
   --primary-dark: #5a00b0;
   --background-dark: #2a0085;
   --text-light: #ffffff;
-
-  --font-display: 'Playfair Display', serif; 
-  --font-body: 'MontserratAlt', sans-serif;  
-
-
+  --font-display: 'Lora', serif; 
+  --font-body: 'Roboto', sans-serif;  
   --radius-large: 20px;
   --radius-small: 8px;
-
   --shadow-soft: 0px 4px 12px rgba(0,0,0,0.2);
   --shadow-strong: 0px 8px 25px rgba(0,0,0,0.35);
 }
