@@ -1,0 +1,75 @@
+.booking-hero{
+    height: 40vh;
+    background: url(../assets/booking-hero.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 75px;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    width: 100%;
+    background-color: #ffffffa6;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    color: #000000;
+    text-align: left;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.info-section h2 {
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 0;
+}
+
+.info-section li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+.btn-time {
+    border: 2px solid #ffffff;
+    color: #000000;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn-time:hover{
+    background-color: #7600df;
+    border: 2px solid black;
+}
+
+.btn-time:focus{
+    background-color: #320067;
+    color: #ffffff;
+}
+
+.btn-time:active{
+    background-color: #7600df;
+}
+
+
+.info-section-appointment {
+    width: 100%;
+    background-color: #ffffffa6;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 50px;
+    border-radius: 20px;
+}

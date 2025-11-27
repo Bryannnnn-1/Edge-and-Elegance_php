@@ -1,0 +1,93 @@
+.service-hero{
+    height: 50vh;
+    background: url(../assets/service-hero.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 75px;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.services {
+    background-color: #ffffffa6;
+    backdrop-filter: blur(10px);
+}
+
+.name {
+    min-width: 200px;
+    color: black;
+}
+.time-price {
+    color: #ffffff;
+}
+
+.info-section {
+    width: 100%;
+    background-color: #ffffffa6;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 50px;
+}
+
+.info-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 0;
+}
+
+.info-section li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+
+@media (max-width: 576px) {
+  .services {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .services .name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .services .time-price {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .services button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 577px) {
+  .services .name {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .services .time-price {
+    justify-content: flex-start;
+  }
+}
