@@ -123,11 +123,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
             </div>
         <?php endif; ?>
 
-        <input type="email" class="form-control mb-3" placeholder="Email Address" name="email">
-        <input type="password" class="form-control mb-3" placeholder="Password" name="password">
+        <input type="email" class="form-control mb-3 fs-5" placeholder="Email Address" name="email">
+        <input type="password" class="form-control mb-3 fs-5" placeholder="Password" name="password">
 
         <div class="d-flex justify-content-between mb-3">
-            <a href="#" class="text-dark text-decoration-none">Forgot password?</a>
+            <a href="#" class="text-dark text-decoration-none fs-5">Forgot password?</a>
         </div>
 
         <div class="d-flex">
@@ -149,6 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     .glass-card {
